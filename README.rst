@@ -1,6 +1,6 @@
 |CircleCI| |AppVeyor| |readthedocs| |coveralls| |version|
 
-|pyversions| |license| TEST CI
+|pyversions| |license|
 
 **Author**: `Pahaz`_
 
