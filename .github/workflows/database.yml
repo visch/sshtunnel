@@ -18,7 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Docker compose up databases and ssh-server
-        run: cd e2e_tests && docker-compose up -d
+        run: |
+          chmod -R 777 ./e2e_tests/ssh-server-config
+          cd e2e_tests && docker-compose up -d
       - name: Install dependencies
         run: |
           uname -a
