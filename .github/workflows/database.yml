@@ -1,10 +1,10 @@
 name: Test tunnel for databases connection
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
 
 jobs:
   build:
